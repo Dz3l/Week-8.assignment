@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Ecommerce Website</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>ShopEase</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error" id="message-error"></span>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+      </main>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to ShopEase</h2>
+      <p>Your favorite place for online shopping</p>
+      <button id="shopNowBtn">Shop Now</button>
+    </section>
+
+    <section class="products">
+        <main>
+        <section class="product-detail">
+            <h2>Smartphone X</h2>
+            <img src="https://images.unsplash.com/photo-1516321310766-61f6f7c0e01f" alt="Smartphone">
+            <p>Price: $699</p>
+            <p>Discover the latest Smartphone X with cutting-edge features...</p>
+            <button id="add-to-cart" class="btn">Add to Cart</button>
+        </section>
+        <section id="cart-items">
+            <h3>Your Cart</h3>
+            <div id="cart-items"></div>
+        </section>
+    </main>
+      <h3>Featured Products</h3>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://unsplash.com/photos/a-pair-of-ear-buds-sitting-on-top-of-a-table-P62HU4kmfw0" alt="product 1"
+          <h4>Product 1</h4>
+          <p>$19.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://unsplash.com/photos/black-pelican-case-wMSZGRzEApw" alt="product 2" />
+          <h4>Product 2</h4>
+          <p>$24.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
